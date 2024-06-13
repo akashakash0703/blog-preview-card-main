@@ -1,0 +1,69 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+body{
+    background-color: var(--Yellow);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Figtree", sans-serif;
+}
+.container{
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    margin: 10%;
+    width: 400px;
+    border-radius: 15px;
+    border: 1px solid var(--Black);
+    box-shadow: 10px 10px;
+}
+img{
+    width:100%;
+    border-radius: 10px;
+}
+img + p{
+    background-color: var(--Yellow);
+    color: var(--Black);
+    max-width:min-content;
+    font-weight: 700;
+    padding:  5px 15px;
+    border-radius: 5px;
+    margin: 30px 0px 15px 0px;
+}
+p{
+    font-weight: 600;
+}
+h2{
+    margin: 25px 0px;
+    font-weight: 700;
+}
+h2 + p{
+  line-height: 25px;
+  color: var(--Grey);
+}
+h2:hover{
+    color: var(--Yellow);
+    cursor: pointer;
+}
+.GHooper{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 700;
+}
+.GHooper img{
+    width:15%;
+    padding-right: 10px;
+}
